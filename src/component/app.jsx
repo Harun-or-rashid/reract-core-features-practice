@@ -1,9 +1,10 @@
 
 import React ,{Component} from 'react';
-
+import './profile'
+import Index from './profile';
 class App extends Component{
     render(){
-        return <div><h3>hi</h3></div>
+        return <h5>hhhhhh</h5>
     }
 }
 export default App
