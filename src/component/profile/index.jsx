@@ -1,11 +1,5 @@
-import React, { Component } from 'react'
- class Index extends Component {
-    render() {
-        return (
-            <div className="col">
-                <h1>hh</h1>
-            </div>
-        )
-    }
+import React from 'react'
+const Index=(props)=>{
+return <div><h4>Hi I'm {props.name}</h4></div>
 }
 export default Index

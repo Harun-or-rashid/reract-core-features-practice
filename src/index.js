@@ -8,7 +8,7 @@ import Index from './component/profile';
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    <Index/>
+    <Index name="ringku"/>
   </React.StrictMode>,
   document.getElementById('root')
 );
