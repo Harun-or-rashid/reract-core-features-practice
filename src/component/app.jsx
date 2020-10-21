@@ -4,15 +4,20 @@ import './profile'
 import Index from './profile';
 class App extends Component{
     state={
-        person:[
-            {
-        name:'ringku',
-        age:23
-            }
-        ]
+        name:"",
+        age:""
+      
+    }
+    handleChange=event=>{
+    this.setState({
+        [event.target.name]:event.target.value
+    })
     }
     render(){
-    return <h5>Hi {this.state.person[0].name} Your age {this.state.person[0].age}</h5>
+    return <div className="container">
+        <input className="form-control col-md-4" type="text" name="name" onChange={this.handleChange} value={this.state.name} placeholder="Name"/>
+        <button className="btn btn-info mt-2" onClick={()=>console.log(this.state)}>Show</button>
+    </div>
     }
 }
 export default App
